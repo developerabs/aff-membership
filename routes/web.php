@@ -23,12 +23,7 @@ use App\Http\Controllers\Admin\SmtpController;
 
 
 // frontend controllers
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PagesController; 
-use App\Http\Controllers\OrderController; 
-use App\Http\Controllers\PaypalController; 
-use App\Http\Controllers\StripePaymentController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\HomeController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -47,21 +42,7 @@ Route::get('/',[HomeController::class, 'home'])->name('home');
 
 
 //pages routes
-Route::get('page/categories/{id}/{slug}',[PagesController::class, 'categories'])->name('page.categories');
-//serveces routes 
-Route::get('service/{id}/{slug}',[PagesController::class, 'services'])->name('page.service');
-Route::get('all-service',[PagesController::class, 'allService'])->name('page.allService');
-
-
-//extra single page routes
-Route::get('about',[PagesController::class, 'about'])->name('page.about');
-Route::get('privacy-policy',[PagesController::class, 'privacyPolicy'])->name('page.privacyPolicy');
-Route::get('contact',[PagesController::class, 'contact'])->name('page.contact');
-//blog routes
-Route::get('blog',[PagesController::class, 'blog'])->name('page.blog');
-Route::get('blog-details/{id}',[PagesController::class, 'blogDetails'])->name('page.blogDetails');
-Route::get('faq',[PagesController::class, 'faq'])->name('page.faq');
-Route::get('how-it-work',[PagesController::class, 'howItWork'])->name('page.howItWork');
+ 
 
 //service order and paymenr gerway routes
 // Route::get('order-now/{id}',[OrderController::class, 'serviceOrder'])->name('page.serviceOrder');
