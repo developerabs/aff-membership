@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.tomato-color{
+    color: rgb(252, 85, 24);
+}
+.orange{
+    color: rgb(252, 153, 39);
+}
+.bg-tomato{
+    background-image:linear-gradient(to right, rgb(255, 102, 0) , rgba(255, 166, 0, 0.993)); 
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0px!important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-link{
+    text-decoration: none;
+    color: #000;
+}
+.header-btn:hover{
+    outline: green!important;
+
+}
+.navbar-nav{
+    padding: 0px 0px 0px 0px;
+}
+.nav-link{
+    color: #000000;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    margin: 0rem 1rem 0rem 0rem!important;
+    cursor: pointer;
+}
+.title{
+   font-size: 48px;  
+   line-height: 2rem;
+   padding-bottom: 1.5rem;
+}
+a{
+    cursor: pointer;
+}
+.service-text {
+    color: #333333!important;
+    font-size: 14px;
+}
+.font-12{
+    font-size: 12px;
+}
+.text-article{
+    max-width: 500px;
+    font-size: 12px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    border-radius: 50%;
+    border: 1px solid orangered;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 30px);
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: orangered;
+}
+
+.carousel-control-prev-icon { 
+    height: 20px;
+}
+.carousel-control-next-icon { 
+  height: 20px;
+}
+.text-h3{
+    font-size: 24px;
+    padding: 0 10px;
+    color: orangered;
+}
+.review-sec{
+    max-width: 500px;
+}
+.user{
+    letter-spacing: 2px;
+}
+.order-text{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.text-footer{
+    color:grey;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.text-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(211, 208, 208, 0.76);
+  }
+  .text-link:hover{
+    color: rgb(231, 227, 227);
+  }
+  .h5-text{
+    color: white;
+    font-size: 20px;
+  }
+  p.text{
+    font-size: 14px;
+    color: rgb(158, 157, 157);
+    max-width: 250px;
+
+}
+@media only screen and (max-width: 767.98px) { 
+    h1{
+        font-size: 28px;
+    }
+    .text-h3{
+        font-size: 20px;
+    }
+   .title{
+       line-height: 3rem;
+   }
+ }
+ @media (max-width: 575.98px) { 
+  .order-text{
+      font-size: 10px;
+      letter-spacing: 1px;
+  }
+
+  }
+  @media only screen and (max-width: 400px) {
+      .p-nav{
+        font-size: 10px;
+
+      }
+  }
+

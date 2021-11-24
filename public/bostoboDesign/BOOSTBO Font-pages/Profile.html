@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Profile</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="BOOSTBO">
+	<meta name="author" content="w3schools">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./CSS/dashboard.css">
+
+</head>
+
+<body>
+	<section>
+		<header class="border-bottom" style="background-color: rgb(255, 255, 255);">
+			<div class=" px-3 container mx-auto d-flex justify-content-between align-items-center py-2 ">
+				<div>
+					<h3 class="text-uppercase pt-1">B<span class="orange">O</span>OST<span class="orange">BO</span></h3>
+				</div>
+				<div class="d-flex gap-4 align-items-center">
+					<div class=" d-md-block d-none">
+						<a class="header-link mx-3">How it works</a>
+						<a class="header-link">FAQ</a>
+					</div>
+					<div class="d-flex align-items-center gap-3">
+						<a href="#" class="header-link">Log In</a>
+						<a href="#"> <button class="btn bg-success text-white">Sign Up</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</header>
+
+		<div class=" border-bottom" style="background-color: rgb(235, 232, 232);">
+			<div class="container mx-auto py-1">
+				<nav class="navbar navbar-expand-lg navbar-light ">
+
+					<div class="navbar-light d-block d-lg-none bg-light btn">
+						<button class=" border-0" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+						aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+								aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<nav class="">
+								<div class="">
+									<ul class="item navbar-nav me-auto mb-2 mb-lg-0">
+										<li class="nav-item ">
+											<a class="nav-link active" href="#">Instagram Services </a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Youtube Services</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Facebook Services</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Twitter Services</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Others Services</a>
+										</li>
+
+									</ul>
+
+								</div>
+						</div>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+						<ul class=" navbar-nav mr-auto mt-2 mt-lg-0 pl-0 ">
+							<li><a class="nav-link"> Instagram Services</a></li>
+							<li><a class="nav-link"> YouTube Services</a></li>
+							<li><a class="nav-link"> FaceBook Services</a></li>
+							<li><a class="nav-link"> Twitter Services</a></li>
+							<li><a class="nav-link"> Other Services</a></li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="container mx-auto">
+
+		<div class="app-content pt-3 p-md-3 p-lg-4">
+			<div class="">
+
+				<h1 class="app-page-title">My Account</h1>
+				<div class="row gy-4">
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+											</svg>
+										</div>
+										<!--//icon-holder-->
+
+									</div>
+									<!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Profile</h4>
+									</div>
+									<!--//col-->
+								</div>
+								<!--//row-->
+							</div>
+							<!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label mb-2"><strong>Photo</strong></div>
+											<div class="item-data"><img class="profile-image"
+													src="assets/images/user.png" alt=""></div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Name</strong></div>
+											<div class="item-data">James Doe</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Email</strong></div>
+											<div class="item-data">james.doe@website.com</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Website</strong></div>
+											<div class="item-data">
+												https://johndoewebsite.com
+											</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Location</strong></div>
+											<div class="item-data">
+												New York
+											</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+							</div>
+							<!--//app-card-body-->
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Profile</a>
+							</div>
+							<!--//app-card-footer-->
+
+						</div>
+						<!--//app-card-->
+					</div>
+					<!--//col-->
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sliders"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+											</svg>
+										</div>
+										<!--//icon-holder-->
+
+									</div>
+									<!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Preferences</h4>
+									</div>
+									<!--//col-->
+								</div>
+								<!--//row-->
+							</div>
+							<!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Language </strong></div>
+											<div class="item-data">English</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Time Zone</strong></div>
+											<div class="item-data">Central Standard Time (UTC-6)</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Currency</strong></div>
+											<div class="item-data">$(US Dollars)</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Email Subscription</strong></div>
+											<div class="item-data">Off</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>SMS Notifications</strong></div>
+											<div class="item-data">On</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+							</div>
+							<!--//app-card-body-->
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Preferences</a>
+							</div>
+							<!--//app-card-footer-->
+
+						</div>
+						<!--//app-card-->
+					</div>
+					<!--//col-->
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-shield-check"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z" />
+												<path fill-rule="evenodd"
+													d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+											</svg>
+										</div>
+										<!--//icon-holder-->
+
+									</div>
+									<!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Security</h4>
+									</div>
+									<!--//col-->
+								</div>
+								<!--//row-->
+							</div>
+							<!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Password</strong></div>
+											<div class="item-data">••••••••</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+							</div>
+							<!--//app-card-body-->
+
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Security</a>
+							</div>
+							<!--//app-card-footer-->
+
+						</div>
+						<!--//app-card-->
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+												<path
+													d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+											</svg>
+										</div>
+										<!--//icon-holder-->
+
+									</div>
+									<!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Payment methods</h4>
+									</div>
+									<!--//col-->
+								</div>
+								<!--//row-->
+							</div>
+							<!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><i
+													class="fab fa-cc-visa me-2"></i><strong>Credit/Debit Card </strong>
+											</div>
+											<div class="item-data">1234*******5678</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Edit</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><i
+													class="fab fa-paypal me-2"></i><strong>PayPal</strong></div>
+											<div class="item-data">Not connected</div>
+										</div>
+										<!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Connect</a>
+										</div>
+										<!--//col-->
+									</div>
+									<!--//row-->
+								</div>
+								<!--//item-->
+							</div>
+							<!--//app-card-body-->
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Payment</a>
+							</div>
+							<!--//app-card-footer-->
+
+						</div>
+						<!--//app-card-->
+					</div>
+				</div>
+				<!--//row-->
+
+			</div>
+			<!--//container-fluid-->
+		</div>
+	</div>
+	<!--//app-content-->
+
+	<!-- footer-section -->
+
+	<footer style="background-color: rgba(26, 25, 25, 0.788);">
+		<div class="container mx-auto py-5 px-3">
+			<div class="row row-cols-1 row-cols-lg-4 justify-content-between ">
+				<div>
+					<h3 class="text-uppercase text-white">B<span class="orange">O</span>OST<span
+							class="orange">BO</span></h3>
+					<p class="text pt-4 pb-3">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Nemo modi tenetur aliquam temporibus cupiditate eaque nesciunt
+					</p>
+				</div>
+
+				<div>
+					<h5 class="h5-text pb-3">Top Category</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-link">Instagram Services</a></li>
+						<li><a href="#" class="text-link">YouTube Services </a></li>
+						<li><a href="#" class="text-link">Shopify Services</a></li>
+						<li><a href="#" class="text-link">Facebook Services</a></li>
+						<li><a href="#" class="text-link">Twitter Services</a></li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="h5-text pb-3">Usefull Link</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-link">Blog</a></li>
+						<li><a href="#" class="text-link"> Sign Up</a></li>
+						<li><a href="#" class="text-link">All Services</a></li>
+					</ul>
+				</div>
+				<div>
+					<h5 class="h5-text pb-3">Information </h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-link"> About Us</a></li>
+						<li><a href="#" class="text-link"> Privacy Policy</a></li>
+						<li><a href="#" class="text-link">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="logo">
+					<img src="https://mobileprice.rafinsourcing.com/frontend/assets/front/images/logo.html" alt="">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="py-2" style="background-color: rgba(51, 50, 50, 0.455);">
+			<div class="container mx-auto">
+				<div class="text-center d-lg-flex justify-content-between align-items-center">
+
+					<div>
+						<h5 class="text-white ">
+							@ 2021 BOOSTBO. All right reserved
+						</h5>
+					</div>
+					<div class="d-flex gap-2 py-3 justify-content-center">
+						<a href="#"><img class="mt-2 mt-sm-0"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9oKESmeHNvFl3r8QxDkqOV_C57UI7sCkE-rIWMLuSbtsvQaOoUNYeS_GhAwQ8qQKfYA&usqp=CAU"
+								width="60px"></a>
+						<a href="#"><img class="mt-2 mt-sm-0"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9J_QeWawQfNGiflpTiWYEPfmJMl4ZFH7DKWYDCFfiBr2_g_3SKrLVzwwrVts8J-yZ8s&usqp=CAU"
+								width="60px"> </a>
+						<a href="#"><img class="mt-2 mt-sm-0"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9J_QeWawQfNGiflpTiWYEPfmJMl4ZFH7DKWYDCFfiBr2_g_3SKrLVzwwrVts8J-yZ8s&usqp=CAU"
+								width="60px"> </a>
+						<a href="#"><img class="mt-2 mt-sm-0"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9J_QeWawQfNGiflpTiWYEPfmJMl4ZFH7DKWYDCFfiBr2_g_3SKrLVzwwrVts8J-yZ8s&usqp=CAU"
+								width="60px"> </a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</footer>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
