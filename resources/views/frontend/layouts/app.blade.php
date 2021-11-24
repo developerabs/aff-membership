@@ -34,6 +34,8 @@
   <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
   <link rel="stylesheet" href="{{ asset('admin/texteditor/dist/ui/trumbowyg.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
 
 </head>
@@ -60,6 +62,7 @@
 <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ asset('admin/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+<script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
@@ -100,5 +103,22 @@
 <script src="{{ asset('admin/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
 {{-- text editor plugin --}}
 <script src="{{ asset('admin/texteditor/dist/trumbowyg.min.js') }}"></script> 
+<script>
+    var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:4,
+            loop:true,
+            margin:10, 
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+</script>
 </body>
 </html>
